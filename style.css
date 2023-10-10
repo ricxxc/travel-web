@@ -1,0 +1,98 @@
+body{
+  background-color: #fff;
+}
+/* navbar */
+.navbar{
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.navbar ul{
+  list-style: none;
+  text-align: center;
+  margin-top: -20px;
+}
+.navbar ul li{
+  display: inline-flex;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.logo{
+  position: relative;
+  top: 8px;
+}
+.navbutton, .search, .login, .signup{
+  position: relative;
+  top: -24px;
+}
+.navbutton{
+  margin-left: 50px;
+  margin-right: 35px;
+}
+.navbutton a{
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.login a{
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #EE9322 ;
+  background-color: #EE9322;
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:25px;
+  padding-right:25px;
+}
+.signup a{
+  text-decoration: none;
+  color: #000;
+  border: 3px solid #EE9322 ;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:18px;
+  padding-right:18px;
+}
+.search {
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 350px;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #39425D;
+  }
+  
+  .searchTerm:focus{
+    color: #000;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /* cover */
