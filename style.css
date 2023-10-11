@@ -108,9 +108,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2.5rem;
+  overflow: hidden;
+  max-height: 730px;
 }
 .hero-tagline, .hero-title,.hero-text,.hero-button{
-  margin-left: 85px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 .hero-tagline{
   font-family: 'Poppins', sans-serif;
