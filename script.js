@@ -4,4 +4,3 @@ function nextFunction() {
       behavior: "smooth",
     });
   }
-  
