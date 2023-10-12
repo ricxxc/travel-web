@@ -491,3 +491,112 @@ body {
 }
 
 /* footer */
+.footer-contact {
+  padding: 20px;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+
+.contact-info{
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-title{
+  margin-bottom: 10px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.contact-detail{
+  padding: 5px;
+  margin: top bottom 5px;
+  font-family: 'Poppins',sans-serif;
+}
+.footer-form{
+  margin-top: 20px;
+  width: 96%;
+}
+.name-mail{
+  align-items: center;
+}
+.footer-nama{
+ width: 48%;
+ height: 30px;
+ border:1px solid #9C9C9C;
+ border-radius: 5px;
+}
+
+.footer-email{
+  width: 48%;
+  height: 30px;
+  border:1px solid #9C9C9C;
+  border-radius: 5px;
+}
+
+.footer-pesan{
+  font-family: 'Poppins',sans-serif;
+  margin-top: 5px;
+  width: 96.7%;
+  height: 122px;
+  border:1px solid #9C9C9C;
+  border-radius: 5px;
+}
+
+.send-button{
+  float: right;
+  margin-right: 79px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: left right 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins',sans-serif;
+  width: 180px;
+  height: 35px;
+}
+
+.send-button:hover{
+  background-color: #022831;
+}
+
+.footer-bar {
+  margin-top: 50px;
+  background-color: #b7b7b7;
+  padding: 20px;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  width: 100%;
+}
+
+
+.footer-social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social-media a {
+  color: white;
+}
+
+.footer-social-media a:hover {
+  color: #fff;
+}
