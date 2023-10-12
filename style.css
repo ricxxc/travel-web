@@ -392,6 +392,8 @@ body {
   background-image: url(./images/container.jpg);
   background-size: cover;
   border-radius: 8px;
+  border-bottom: 2px solid #5E6282;
+  border-right: 2px solid #5E6282;
 }
 
 .text-container h1{
@@ -434,6 +436,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 280px;
+  margin-bottom: 100px;
 }
 
 .subscribe-box {
@@ -486,3 +489,5 @@ body {
 .subscribe-button:hover{
   background-color: #df6951b8;
 }
+
+/* footer */
