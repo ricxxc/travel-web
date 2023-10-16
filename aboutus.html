@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700
+  &family=Montserrat:wght@100;200;300;400;600;700
+  &family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700
+  &family=Poppins:wght@100;200;300;400;500;600;700
+  &family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            inter: ['Inter','system ui','sans-serif'],
+            montserrat: ['Montserrat','sans-serif'],
+            jakarta: ['Plus Jakarta Sans','sans-serif'],
+            poppins: ['Poppins','sans-serif'],
+            volkhov: ['Volkhov', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <title>About Us</title>
+  <style type="text/tailwindcss">
+    /* *{
+      border: 1px solid red;
+    } */
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f6f4eb]">
+  <header class="text-black font-sans text-center h-20 w-full">
+    <nav class="mx-8 flex max-w-screen-2xl items-center justify-between lg:px-12" aria-label="Global">
+      <img src="../asset/images/logo.png" alt="logo" class="h-20 w-20 mr-28 -ml-6">
+
+      <!-- menu -->
+      <ul class="flex items-center justify-center space-x-10">
+        <li><a href="home.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Home</a></li>
+        <li><a href="category.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Category</a></li>
+        <li><a href="blog.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Blog</a></li>
+        <li><a href="aboutus.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">About Us</a></li>
+      </ul>
+
+      <!-- search -->
+      <div class="flex items-center justify-center border border-black rounded-md h-7 mx-16 drop-shadow-sm">
+        <input type="search" placeholder="Search" class="text-base font-montserrat font-light w-96 rounded-l-md pl-2 h-full focus:outline-none">
+        <button type="submit" title="Search" class="px-4 bg-black text-white rounded-r-md h-full hover:bg-gray-700">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <!-- user -->
+      <div class="flex items-center justify-center px-5 mx-4 bg-[#EE9322] border-[#EE9322] hover:bg-[#e68c1e] rounded-md h-7">
+        <a href="login.html" class="text-base font-bold font-inter text-white ">Login</a>
+      </div>
+      <div class="flex items-center justify-center px-3 mr-4 border-2 bg-white border-[#EE9322] hover:bg-gray-100 rounded-md h-7">
+        <a href="signup.html" class="text-base font-bold font-inter text-black">Sign Up</a>
+      </div>
+    </nav>
+    </header>
+    <main>
+      <!-- description -->
+      <section>
+        <h1 class="text-5xl m-5 font-bold font-['Volkhov','sain-serif'] text-center text-[#14183E]">About Us</h1>
+        <p class="text-lg m-5 px-16 text-justify font-poppins text-[#14183E]">Provinsi Riau merupakan salah satu provinsi di Indonesia yang memiliki potensi 
+          pariwisata yang sangat besar. Dengan kekayaan alam dan budaya yang melimpah, Riau menjadi destinasi wisata yang menarik bagi 
+          wisatawan lokal maupun mancanegara. Website ini dipersembahkan untuk mempromosikan pariwisata Riau kepada masyarakat luas. 
+          Kami berkomitmen untuk memberikan informasi yang akurat dan terkini tentang pariwisata Riau. Kami juga akan terus berupaya untuk 
+          meningkatkan kualitas website ini agar dapat menjadi sumber informasi yang bermanfaat bagi wisatawan.</p>
+      </section>
+      <!-- team -->
+      <section>
+        <h3 class="text-2xl mt-10 font-bold font-poppins text-center text-[#14183E]">Tim Kami</h3>
+        <div class="flex items-center justify-center  m-5">
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/male-profile.png" alt="male-profile">
+            </div>
+            <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Enrico Airlangga</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hustler</p>
+            </div>
+          </div>
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/female-profile.png" alt="female-profile">
+            </div>
+              <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Risa Nur Fitriyani</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hipster</p>
+            </div>
+          </div>
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/female-profile.png" alt="female-profile">
+            </div>
+            <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Fara Dhiya Ulhaq</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hipster</p>
+            </div>
+          </div>          
+        </div>
+
+        <div class="flex items-center justify-center  m-5">
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/male-profile.png" alt="male-profile">
+            </div>
+            <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Muhammad Rafidhia</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hacker</p>
+            </div>
+          </div>
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/female-profile.png" alt="female-profile">
+            </div>
+            <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Anya Sasi Kirana</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hacker</p>
+            </div>
+          </div>
+          <div class="flex-1 max-w-xs mx-12 rounded-md overflow-hidden m-6 shadow-lg bg-white shadow-gray-200 border border-black">
+            <div class="flex items-center justify-center mt-16 mb-20">
+              <img class="w-36 h-36 object-cover rounded-full" src="../asset/images/male-profile.png" alt="male-profile">
+            </div>
+            <div class="px-6 pb-12">
+              <div class="text-[#DF6951] font-poppins font-bold text-center text-xl mb-2">Irhamna Akbar</div>
+              <p class="text-gray-700 font-jakarta text-base text-center">Hacker</p>
+            </div>
+          </div> 
+      </section>
+      <!-- contact us -->
+      <section class="mb-8 mt-14">
+        <!-- contact -->
+        <div class="flex flex-row justify-start px-8">
+            <div class="flex flex-col items-center justify-center text-center max-w-xs">
+              <h2 class="text-3xl font-bold mb-8">Info Kontak</h2>
+              <img src="../asset/images/map-icon.png" alt="address"></img>
+              <p class="text-sm mb-6 px-4">Jl. Imam Bonjol No.123, Kp. Selatan, Kec. Senapelan, Kota Pekanbaru, Riau</p>
+              <img src="../asset/images/phone.png" alt="phone"></img>
+              <p class="text-sm mb-6 px-4">(+62) 823-6837-37**</p>
+              <img src="../asset/images/email.png" alt="email"></img>
+              <p class="text-sm mb-6 px-4">nusariau@gmail.com</p>
+          </div>
+          <!-- form -->
+          <div class="flex flex-col mx-4 px-8 w-full">
+            <div class="flex flex-col items-start justify-start text-start w-full">
+              <h2 class="text-3xl font-bold mb-8">Kirim Pesanmu</h2>
+              <p class="text-sm">Kirimkan kritik dan saran untuk membantu kami dalam meningkatkan layanan.</p>
+              <form class="w-full mt-3" action="#">
+                <div class="flex flex-row justify-start">
+                  <input type="text" class="footer-nama w-full h-10 border border-gray-300 rounded-md p-2 mr-2" placeholder="Nama">
+                  <input type="email" class="footer-email w-full h-10 border border-gray-300 rounded-md p-2 ml-2" placeholder="Email">
+                </div> 
+                <textarea class="footer-pesan w-full h-24 border border-gray-300 rounded-md p-2 mt-2" placeholder="Pesan"></textarea>
+              </form>
+            </div>
+            <div class="flex flex-col justify-end items-end">
+              <button class="send-button bg-black text-white font-bold rounded-md p-2 mt-2 px-6 hover:bg-gray-700" type="submit">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#b7b7b7] flex flex-row justify-center items-center">
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Twitter.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Facebook.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/LinkedIn.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Instagram.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/TikTok.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+    </footer>
+</body>
+</html>
