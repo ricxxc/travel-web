@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700
+  &family=Montserrat:wght@100;200;300;400;600;700
+  &family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700
+  &family=Poppins:wght@100;200;300;400;500;600;700
+  &family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            inter: ['Inter','system ui','sans-serif'],
+            montserrat: ['Montserrat','sans-serif'],
+            jakarta: ['Plus Jakarta Sans','sans-serif'],
+            poppins: ['Poppins','sans-serif'],
+            volkhov: ['Volkhov', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <title>Home</title>
+  <style type="text/tailwindcss">
+    /* *{
+      border: 1px solid red;
+    } */
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f6f4eb]">
+  <header class="text-black font-sans text-center h-20 w-full">
+    <nav class="mx-8 flex max-w-screen-2xl items-center justify-between lg:px-12" aria-label="Global">
+      <img src="../asset/images/logo.png" alt="logo" class="h-20 w-20 mr-28 -ml-6">
+
+      <!-- menu -->
+      <ul class="flex items-center justify-center space-x-10">
+        <li><a href="home.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Home</a></li>
+        <li><a href="category.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Category</a></li>
+        <li><a href="blog.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">Blog</a></li>
+        <li><a href="aboutus.html" class="text-base font-bold font-inter text-[#333b3c] hover:text-black">About Us</a></li>
+      </ul>
+
+      <!-- search -->
+      <div class="flex items-center justify-center border border-black rounded-md h-7 mx-16 drop-shadow-sm">
+        <input type="search" placeholder="Search" class="text-base font-montserrat font-light w-96 rounded-l-md pl-2 h-full focus:outline-none">
+        <button type="submit" title="Search" class="px-4 bg-black text-white rounded-r-md h-full hover:bg-gray-700">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <!-- user -->
+      <div class="flex items-center justify-center px-5 mx-4 bg-[#EE9322] border-[#EE9322] hover:bg-[#e68c1e] rounded-md h-7">
+        <a href="login.html" class="text-base font-bold font-inter text-white ">Login</a>
+      </div>
+      <div class="flex items-center justify-center px-3 mr-4 border-2 bg-white border-[#EE9322] hover:bg-gray-100 rounded-md h-7">
+        <a href="signup.html" class="text-base font-bold font-inter text-black">Sign Up</a>
+      </div>
+    </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="flex flex-row max-w-screen-2xl px-8 overflow-hidden">
+        <div class="m-10 ml-6">
+          <h4 class="text-[#DF6951] font-bold font-poppins mb-2">BEST DESTINATION IN RIAU</h4>
+          <h1 class="text-4xl font-bold font-['Volkhov','sans-serif'] leading-tight mb-6 w-min">EXPLORE BEAUTIFUL RIAU</h1>
+          <p class="text-lg max-w-md text-[#5E6282] text-justify font-poppins mb-6">
+            Destinasi wisata pilihan Provinsi Riau. Mulai dari
+            wisata alam, seni dan budaya, serta kuliner khas
+            dari masing-masing daerah Provinsi Riau
+          </p>
+          <button type="button" onclick="nextFunction()" class="bg-[#FFB800] text-black font-bold font-inter hover:bg-yellow-400 px-4 py-4 rounded-md shadow-md">Find out more</button> 
+        </div>
+        <div class="flex justify-between overflow-hidden -mr-80">
+          <div class="z-10">
+            <img src="../asset/images/ellipse.png" alt="hero-img" class="h-[524px] w-[800px] ml-20 m-16">
+          </div>
+          <div class="z-0">
+            <img src="../asset/images/circle.svg" alt="hero-img" class="h-900px] w-[702px] -ml-60 m-16 ">
+          </div>
+        </div>
+      </section>
+
+      <!-- popular -->
+      <section class="flex flex-col justify-start  ml-5" id="popular">
+        <div class="flex flex-col items-center justify-center text-center max-w-xs">
+          <h1 class="text-4xl font-bold font-['Volkhov','sans-serif'] mb-8">Tempat Populer</h1>
+        </div>
+        <!-- card -->
+        <div class="flex flex-row justify-center items-center px-4">
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular1">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/pulau-bintan.png" class="object-cover w-full h-[325px] rounded-t-xl" alt="Pulau Bintan">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Pulau Bintan</h5>
+                  <p class="font-inter">Kota Tanjungpinang</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.7<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular2">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Candi-Muara-Takus.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Candi Muara Takus">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Candi Muara Takus</h5>
+                  <p class="font-inter">Kabupaten Kampar</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.4<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular3">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Masjid-Agung-An-nur.jpeg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Masjid Raya An-Nur">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Masjid Raya An-Nur</h5>
+                  <p class="font-inter">Kota Pekanbaru</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.6<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular4">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/istana-siak.png" class="object-cover w-full h-[325px] rounded-t-xl" alt="Istana Siak">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Istana Siak Sri Indrapura</h5>
+                  <p class="font-inter">Kabupaten Siak</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.8<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+        </div>
+      </section>
+      <!-- galery -->
+      <section>
+        <div class="mx-14 mt-12">
+          <h4 class="text-[#DF6951] font-extrabold font-['Manrope','sans-serif']">MENGENAL DESTINASI</h4>
+          <div class="flex flex-row justify-between items-center">
+            <div>
+              <h1 class="text-4xl text-[#14183E] font-extrabold font-['Manrope','sans-serif']">Galeri Pariwisata & Blog Travel</h1>
+            </div>
+            <div class="text-[#D83F31] font-jakarta font-semibold hover:text-red-700">
+              <a href="blog.html">lihat semua<i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-8">
+          <div class="flex flex-cols-[1fr_4fr]">
+            <div class="shadow-md rounded-xl"> <!-- card -->
+              <div class="max-w-[275px] max-h-[455px]">
+                <img src="../asset/images/mountain.png" class="object-cover w-full h-[202px] rounded-t-xl" alt="mountain">
+              </div>
+              <div class="bg-white flex flex-row items-start w-[275px] h-[253px] rounded-b-xl px-8">
+                <div>
+                  <h5 class="font-jakarta text-sm text-gray-500 font-bold mt-6">26 DESEMBER 2022</h5>
+                  <h5 class="font-jakarta text-sm font-bold text-black mt-4">Naik Gunung</h5>
+                  <p class="font-jakarta text-sm font-semibold text-gray-800 mt-3 text-justify">
+                    Nggak pernah naik ke gunung?
+                    Lihat sunrise dipuncak sini indah
+                    banget loh. </p>
+                  <a href="#" >
+                    <p class="text-[#D83F31] font-jakarta font-normal text-sm">Baca Selengkapnya</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="max-h-[455px] w-[809px] ml-12 shadow-md rounded-xl">
+              <video controls class="w-full h-full rounded-xl" src="../asset/video/sea_vid.mp4"></video>
+            </div>
+          </div>
+          <div class="my-12 w-[1135.2px] h-[205px] bg-[url('../asset/images/container.jpg')] rounded-xl shadow-md">
+            <div class="w-full h-full bg-blue-600/30 backdrop-brightness-90 rounded-xl">
+              <div class="py-8 px-4">
+                <h1 class="font-jakarta font-extrabold text-2xl text-white ml-3">Tips meminum air kawah biar lidah melepuh 😁</h1>
+                <p class="font-jakarta font-normal text-base text-white mt-2 w-[700px] ml-3">
+                  Lidah melepuh? why nott, kawah bukan untuk 
+                  dilihat kawan.. tapi untuk di minum.. rasakan
+                  kepanasan yang brutal 🔥</p>
+                <h6 class="font-jakarta font-semibold text-base text-white mt-2 ml-3">Trending</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- place -->
+      <section>
+        <div class="mx-14 mt-12 mb-8">
+          <div class="flex flex-row justify-between items-center">
+            <div>
+              <h1 class="text-4xl text-[#14183E] font-extrabold font-['Volkhov','sans-serif']">Jelajahi Tempat</h1>
+            </div>
+            <div class="text-[#D83F31] font-jakarta font-semibold hover:text-red-700">
+              <a href="#">lihat semua<i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="flex flex-row justify-center items-center px-4">
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular1">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/pulau-bintan.png" class="object-cover w-full h-[325px] rounded-t-xl" alt="Pulau Bintan">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Pulau Bintan</h5>
+                  <p class="font-inter">Kota Tanjungpinang</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.7<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular2">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Candi-Muara-Takus.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Candi Muara Takus">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Candi Muara Takus</h5>
+                  <p class="font-inter">Kabupaten Kampar</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.4<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular3">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Masjid-Agung-An-nur.jpeg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Masjid Raya An-Nur">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Masjid Raya An-Nur</h5>
+                  <p class="font-inter">Kota Pekanbaru</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.6<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="popular4">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/istana-siak.png" class="object-cover w-full h-[325px] rounded-t-xl" alt="Istana Siak">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Istana Siak Sri Indrapura</h5>
+                  <p class="font-inter">Kabupaten Siak</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.8<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+        </div>
+        <!-- card-col-2 -->
+        <div class="flex flex-row justify-center items-center px-4 my-10">
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="food">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/pondok-gurih.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Pondok Gurih">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold">Pondok Gurih</h5>
+                  <p class="font-inter">Kota Pekanbaru</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.4<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="theme-park">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/labersa.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Riau Fantasi Labersa">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold w-[200px]">Labersa Riau Fantasi</h5>
+                  <p class="font-inter">Kabupaten Kampar</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.2<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="art-&-culture">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Anjung_Seni_Idrus_Tintin.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Anjung_Seni_Idrus_Tintin">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold w-[200px]">Anjung Seni Idrus Tintin</h5>
+                  <p class="font-inter">Kota Pekanbaru</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.4<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+          <div class="mx-6 shadow-md rounded-xl">
+            <a href="#" aria-label="heritage">
+              <div class="max-w-[275px] max-h-[325px]">
+                <img src="../asset/images/Rumah-Singgah-Tuan-Kadi.jpg" class="object-cover w-full h-[325px] rounded-t-xl" alt="Rumah-Singgah-Tuan-Kadi">
+              </div>
+              <div class="bg-white flex flex-row items-center justify-between w-[275px] h-20 rounded-b-xl px-4">
+                <div>
+                  <h5 class="font-inter font-bold w-[200px]">Rumah Singgah Tuan Kadi</h5>
+                  <p class="font-inter">Kota Pekanbaru</p>
+                </div>
+                <div >
+                  <p class="text-[#EE9322] font-poppins">4.5<i class="fa fa-star"></i></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe -->
+      <section>
+        <div class="flex justify-center items-center mx-14 my-28">
+          <div class="bg-[#ee922265] h-[512px] w-[1180px] rounded-lg flex flex-col justify-center items-center">
+            <div>
+              <h2 class="text-[42px] text-[#5E6282] font-poppins w-[1060px] text-center font-semibold">
+                Subscribe untuk mengetahui informasi seputar
+                destinasi wisata Provinsi Riau lainnya
+              </h2>
+            </div>
+            <div class="mt-28">
+              <form action="" class="flex flex-row justify-center">
+                <input type="email" class="bg-white rounded-lg p-2 m-2 font-inter text-lg font-medium w-[560px] py-4" placeholder="Enter your email address">
+                <button type="submit" class="bg-[#DF6951] rounded-lg p-4 m-2 font-inter text-lg text-center text-white font-medium px-6 hover:brightness-90">Subscribe</button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- contact us -->
+      <section class="mb-8 mt-14">
+        <!-- contact -->
+        <div class="flex flex-row justify-start px-8">
+            <div class="flex flex-col items-center justify-center text-center max-w-xs">
+              <h2 class="text-3xl font-bold mb-8">Info Kontak</h2>
+              <img src="../asset/images/map-icon.png" alt="address"></img>
+              <p class="text-sm mb-6 px-4">Jl. Imam Bonjol No.123, Kp. Selatan, Kec. Senapelan, Kota Pekanbaru, Riau</p>
+              <img src="../asset/images/phone.png" alt="phone"></img>
+              <p class="text-sm mb-6 px-4">(+62) 823-6837-37**</p>
+              <img src="../asset/images/email.png" alt="email"></img>
+              <p class="text-sm mb-6 px-4">nusariau@gmail.com</p>
+          </div>
+          <!-- form -->
+          <div class="flex flex-col mx-4 px-8 w-full">
+            <div class="flex flex-col items-start justify-start text-start w-full">
+              <h2 class="text-3xl font-bold mb-8">Kirim Pesanmu</h2>
+              <p class="text-sm">Kirimkan kritik dan saran untuk membantu kami dalam meningkatkan layanan.</p>
+              <form class="w-full mt-3" action="#">
+                <div class="flex flex-row justify-start">
+                  <input type="text" class="footer-nama w-full h-10 border border-gray-300 rounded-md p-2 mr-2" placeholder="Nama">
+                  <input type="email" class="footer-email w-full h-10 border border-gray-300 rounded-md p-2 ml-2" placeholder="Email">
+                </div> 
+                <textarea class="footer-pesan w-full h-24 border border-gray-300 rounded-md p-2 mt-2" placeholder="Pesan"></textarea>
+              </form>
+            </div>
+            <div class="flex flex-col justify-end items-end">
+              <button class="send-button bg-black text-white font-bold rounded-md p-2 mt-2 px-6 hover:bg-gray-700" type="submit">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#b7b7b7] flex flex-row justify-center items-center">
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Twitter.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Facebook.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/LinkedIn.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/Instagram.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+      <a href="#" target="_blank" class="m-1 rounded-full">
+        <img src="../asset/images/TikTok.png" alt="logo" class="w-20 h-20 p-4 rounded-full">
+      </a>
+    </footer>
+</body>
+<script src="../src/js/script.js"></script>
+</html>
