@@ -1,0 +1,79 @@
+p {
+    line-height: 1.5; /* Menambahkan jarak antar baris sebesar 1.5 kali ukuran font */
+}
+
+#container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 2.5rem; 
+    overflow: hidden; 
+    max-height: 750px;
+}
+
+.logo-description {
+    margin-top: 0px; /* Sesuaikan dengan jarak yang diinginkan */
+    text-align: center; /* Pastikan teks berada di tengah */
+    font-family: Poppins;
+    color: rgb(94,98,130);
+}
+
+
+.forget-password {
+    font-size: 15px;
+    color: rgb(10,34,250);
+    text-align: right;
+}
+
+#username, #password {
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    height: 35px;
+    font-family:Poppins;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#login, #register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 184, 0);
+    border: none;
+    border-radius: 15px;
+    text-align: center; 
+}
+/* Register */
+
+#register-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#registerReg {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 184, 0);
+    border: none;
+    border-radius: 15px;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Tambahkan baris ini */
+}
+
+#usernameReg, #passwordReg, #repeatPassReg, #emailReg {
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    height: 35px;
+    font-family: Poppins;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make it a block-level element */
+}
