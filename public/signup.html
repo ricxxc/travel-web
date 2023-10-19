@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700
+    &family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;600;700
+    &family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700
+    &family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            inter: ['Inter','system ui','sans-serif'],
+            montserrat: ['Montserrat','sans-serif'],
+            jakarta: ['Plus Jakarta Sans','sans-serif'],
+            poppins: ['Poppins','sans-serif'],
+            volkhov: ['Volkhov', 'sans-serif'],
+            manrope: ['Manrope','sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <title>Register</title>
+  <style type="text/tailwindcss">
+    /* *{
+      border: 1px solid red;
+    } */
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f6f4eb] -mt-8">
+    <div class="flex flex-col items-center justify-center">
+        <div class="flex h-[387px] w-[395px]">
+            <img src="../asset/images/logo.png" class="w-full h-full" alt="">
+        </div>
+        <div class="-mt-4 flex flex-col items-center  w-2/5">
+            <input type="text" class="mt-4 px-2 w-full h-12 bg-gray-300 shadow-md rounded-md text-start" placeholder="Username">
+            <input type="text" class="mt-4 px-2 w-full h-12 bg-gray-300 shadow-md rounded-md text-start" placeholder="Password">
+            <input type="text" class="mt-4 px-2 w-full h-12 bg-gray-300 shadow-md rounded-md text-start" placeholder="Konfirmasi Password">
+            <input type="text" class="mt-4 px-2 w-full h-12 bg-gray-300 shadow-md rounded-md text-start" placeholder="Email">
+        </div>
+        <div class="mt-6">
+            <a href="home.html" class="mt-6 bg-[#FFB800] font-inter font-bold text-[#1B1A17] text-lg py-2 px-8 rounded-md text-center shadow-md">Register</a>
+        </div>
+        <p class="mt-4">Sudah meniliki akun? <a href="login.html" class="text-[#FFB800]">Masuk</a></p>
+    </div>
+</body>
+</html>
